@@ -1,0 +1,21 @@
+name: Third Workflow by Ramya
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: |
+          echo "Hello World!"
+          echo "Ramya is here!"
+      - name: Print Goodbye
+        run: echo "Goodbye World!"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Another Greeting
+        run: |
+          echo "Hello World Again!"
+          echo "Ramya is here again!"
+      - name: Print Another Goodbye
+        run: echo "Goodbye World Again!"
